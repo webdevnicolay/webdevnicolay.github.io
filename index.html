@@ -21,6 +21,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -30,15 +31,15 @@
 
     <div class="row">
     	<div class="col-md-7">
-    		<img class="header-img"src="img/main-img.png" alt="монитор">
+    		<img class="header-img animated fadeInLeftBig"src="img/main-img.png" alt="монитор">
     	</div>
     	<!-- /.col-7 -->
     	<div class="col-md-5">
-    		<p class="header-pretitle">Веб-разработчик</p>
-    		<h1 class="header-title">Николай Злобин</h1>
-    		<p class="header-subtitle">Верстка на HTML/CSS <br/>
+    		<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+    		<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Николай Злобин</h1>
+    		<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br/>
 Разработка сайтов под ключ</p>
-            <div class="header-buttom-block">
+            <div class="header-buttom-block wow fadeInRightBig" data-wow-delay="0.4s">
 
             <a href="https://vk.me/nezloikolyan" class="header-button"> Связаться </a>
             <small>Это бесплатно</small>	
@@ -55,7 +56,7 @@
 
     <section class="portfolio">
     	<div class="container">
-    		<div class="portfolio-block">
+    		<div class="portfolio-block animated fadeIn">
     		<h2 class="portfolio-title">Портфолио</h2>
     		<p class="portfolio-subtitle">Мои Работы</p>
 
@@ -94,10 +95,10 @@
     	     <div class="col-md-4">
     	     	<div class="social-block">
     	     		<p>Подпишитесь:</p>
-    	     		<a href="#"><img src="img/socials/facebook-logo-button.png" alt="Фейсбук"></a>
-    	     		<a href="https://t.me/lipoksai"><img src="img/socials/telegram-symbol.png" alt="Телега"></a>
-    	     		<a href="https://vk.com/nezloikolyan"><img src="img/socials/vk-social-logotype.png" alt="ВК"></a>
-    	     		<a href="https://www.youtube.com/channel/UCiJ0rOzvhZeD2173JA4y9HA?view_as=subscriber"><img src="img/socials/youtube-symbol.png" alt="Ютюб"></a>
+    	     		<a class="wow bounceInDown" data-wow-delay="0.1s" href="#"><img   src="img/socials/facebook-logo-button.png" alt="Фейсбук"></a>
+    	     		<a class="wow bounceInDown" data-wow-delay="0.2s" href="https://t.me/lipoksai"><img  src="img/socials/telegram-symbol.png" alt="Телега"></a>
+    	     		<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com/nezloikolyan"><img  src="img/socials/vk-social-logotype.png" alt="ВК"></a>
+    	     		<a class="wow bounceInDown" data-wow-delay="0.4s" href="https://www.youtube.com/channel/UCiJ0rOzvhZeD2173JA4y9HA?view_as=subscriber"><img  src="img/socials/youtube-symbol.png" alt="Ютюб"></a>
     	     	</div>
     	     </div>
     	     <div class="col-md-4">
@@ -116,6 +117,10 @@
 
     </footer>
 
+    <script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 
 </body>
 </html>
